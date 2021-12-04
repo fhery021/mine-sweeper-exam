@@ -31,7 +31,7 @@ apply plugin : "java"
 // TODO overwrite with the new sonar.projectKey and sonar.organization
 sonarqube {
     properties {
-        property "sonar.projectKey", "fhery021_cli-template"
+        property "sonar.projectKey", "fhery021_mine-sweeper-exam"
         property "sonar.organization", "fhery021"
         property "sonar.host.url", "https://sonarcloud.io"
     }
