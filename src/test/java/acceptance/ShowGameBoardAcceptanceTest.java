@@ -28,11 +28,11 @@ class ShowGameBoardAcceptanceTest {
                   .isEqualTo(expectedGameBoard);
     }
 
+    // TODO Mock gameBoard
     @DisplayName("Given board without bomb, click on square should unveil the clean space.")
     @Test
     void givenBoardWithBomb_click_should_unveil_cleanSpace() {
         String expectedGameBoard = "+-+\n" + "|_|\n" + "+-+\n";
-
         Game game = new Game();
         game.click();
         Assertions.assertThat(game.showBoard())

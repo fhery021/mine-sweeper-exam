@@ -2,6 +2,8 @@ package game;
 
 public class Game {
 
+    private char content = '_';
+
     String displayBoard = "+-+\n" + "| |\n" + "+-+\n";
 
     public String showBoard() {
