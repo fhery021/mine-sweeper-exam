@@ -17,10 +17,21 @@ class ShowGameBoardAcceptanceTest {
                   .isEqualTo(expectedGameBoard);
     }
 
-    @DisplayName("Given empty board with bomb, click on square should unveil the bomb.")
+    @DisplayName("Given board with bomb, click on square should unveil the bomb.")
     @Test
     void givenEmptyBoardWithBomb_click_should_unveil_bomb() {
         String expectedGameBoard = "+-+\n" + "|X|\n" + "+-+\n";
+
+        Game game = new Game();
+        game.click();
+        Assertions.assertThat(game.showBoard())
+                  .isEqualTo(expectedGameBoard);
+    }
+
+    @DisplayName("Given board without bomb, click on square should unveil the clean space.")
+    @Test
+    void givenBoardWithBomb_click_should_unveil_cleanSpace() {
+        String expectedGameBoard = "+-+\n" + "|_|\n" + "+-+\n";
 
         Game game = new Game();
         game.click();
