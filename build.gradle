@@ -14,12 +14,15 @@ repositories {
 
 def junitVersion = '5.8.2'
 def assertjVersion = '3.21.0'
+def mockitoVersion = '4.1.0'
+
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
-
     testImplementation("org.assertj:assertj-core:${assertjVersion}")
+    testImplementation("org.mockito:mockito-core:${mockitoVersion}")
+    testImplementation("org.mockito:mockito-inline:${mockitoVersion}")
 }
 
 test {
@@ -28,7 +31,6 @@ test {
 
 apply plugin : "java"
 
-// TODO overwrite with the new sonar.projectKey and sonar.organization
 sonarqube {
     properties {
         property "sonar.projectKey", "fhery021_mine-sweeper-exam"
