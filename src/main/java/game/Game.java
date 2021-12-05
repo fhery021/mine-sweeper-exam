@@ -2,6 +2,6 @@ package game;
 
 public class Game {
     public String showBoard() {
-        return null;
+        return "+-+\n" + "| |\n" + "+-+\n";
     }
 }
