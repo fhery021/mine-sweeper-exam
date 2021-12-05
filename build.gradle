@@ -25,6 +25,14 @@ dependencies {
     testImplementation("org.mockito:mockito-inline:${mockitoVersion}")
     testImplementation("org.mockito:mockito-junit-jupiter:${mockitoVersion}")
     testImplementation("org.assertj:assertj-core:${assertjVersion}")
+
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    implementation 'org.slf4j:slf4j-simple:1.7.32'
 }
 
 test {
