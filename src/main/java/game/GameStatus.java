@@ -1,5 +1,6 @@
 package game;
 
 public enum GameStatus {
-    IN_PROGRESS
+    IN_PROGRESS, LOOSE;
+
 }

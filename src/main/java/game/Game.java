@@ -4,6 +4,8 @@ public class Game {
 
     private Display display;
 
+    private GameBoard gameBoard;
+
     String displayBoard = "+-+\n" + "| |\n" + "+-+\n";
 
     public Game(Display display) {
@@ -12,6 +14,6 @@ public class Game {
 
     public GameStatus play() {
         display.show(displayBoard);
-        return GameStatus.IN_PROGRESS;
+        return GameStatus.LOOSE;
     }
 }
