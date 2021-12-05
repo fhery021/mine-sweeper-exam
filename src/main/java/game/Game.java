@@ -2,16 +2,16 @@ package game;
 
 public class Game {
 
-    private char content = '_';
+    private Display display;
 
     String displayBoard = "+-+\n" + "| |\n" + "+-+\n";
 
-    public String showBoard() {
-        System.out.println(displayBoard);
-        return displayBoard;
+    public Game(Display display) {
+        this.display = display;
     }
 
-    public void click() {
-        this.displayBoard = "+-+\n" + "|X|\n" + "+-+\n";
+    public GameStatus play() {
+        display.show(displayBoard);
+        return GameStatus.IN_PROGRESS;
     }
 }
