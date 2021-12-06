@@ -107,7 +107,8 @@ Or:
 
 - ✔ 1x1 Game Board
 - ✔ On Every 2 seconds draw the game board
-- 🔧 2x2 Game Board
-- 📌 3x3 Game Board
+- ✔ 2x2 Game Board
+- 🔧 3x3 Game Board
+- 📌 Mark bombs
 
 > Example entries in the progress: - ✔ Done 🔧 In Progress 📌 TODO
