@@ -9,14 +9,16 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@ExtendWith({MockitoExtension.class})
+@ExtendWith({ MockitoExtension.class })
 class ShowGameBoardAcceptanceTest {
 
     @DisplayName("Given empty board, the game should show the board.")
     @Test
     void given_newGame_game_should_showBoard() {
         // given
-        String expectedGameBoard = "+-+\n" + "| |\n" + "+-+\n";
+
+        String expectedGameBoard = "+-+-+\n" + "| | |\n" + "+-+-+\n" + "| | |\n" + "+-+-+";
+
         Game game = new Game();
         // when
 

@@ -53,7 +53,7 @@ public class Game {
     private void displayGameResult(GameStatus gameStatus) {
         if (gameStatus.equals(GameStatus.WON)) {
             display.show("The land is cleared! GOOD JOB! \n");
-        } else if (gameStatus.equals(GameStatus.LOST)) {
+        } else {
             display.show("BOOM! Game over.\n");
         }
     }
